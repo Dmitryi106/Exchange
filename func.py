@@ -14,6 +14,7 @@ def sorted_list(new_list):
 sorted_list=sorted_list(new_list)
 
 def format_operation(sorted_list):
+    '''Основное форматирование операций'''
     date = datetime.datetime.strptime(sorted_list["date"], "%Y-%m-%dT%H:%M:%S.%f")
     amount = float(sorted_list["operationAmount"]["amount"])
     currency = sorted_list["operationAmount"]["currency"]["name"]
